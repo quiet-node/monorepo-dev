@@ -1,0 +1,25 @@
+{
+  "_comment": "Lerna uses Nx to detect packages in the workspace and dependencies between them.",
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "nx/tasks-runners/default",
+      "options": {
+        "cacheableOperations": [],
+        "accessToken": "ZGM0MjFjYjctOTYxNC00ZTJmLWE2NmItYjk2NTc2MzU0YjYzfHJlYWQtd3JpdGU="
+      }
+    }
+  },
+  "affected": {
+    "defaultBase": "main"
+  },
+  "targetDefaults": {
+    "build": {
+      "dependsOn": ["^build"],
+      "_comment": "`^build` makes sure all the inner dependencies are built first before building the main package "
+    },
+    "test": {
+      "dependsOn": ["build"],
+      "_comment": "This option makes sure the package is built before running `jest` testing"
+    }
+  }
+}
