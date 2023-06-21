@@ -15,5 +15,8 @@
   ],
   "scripts": {
     "test": "node ./__tests__/demo-is-odd.test.js"
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "typescript": "^5.1.3"
   }
 }
