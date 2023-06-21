@@ -5,16 +5,19 @@
   "author": "Logan Nguyen <lg.131.dev@gmail.com>",
   "homepage": "",
   "license": "ISC",
-  "main": "lib/demo-is-odd.js",
+  "main": "dist/demo-is-odd.js",
+  "types": "dist/demo-is-odd.d.ts",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
   },
   "files": [
-    "lib"
+    "dist"
   ],
   "scripts": {
-    "test": "node ./__tests__/demo-is-odd.test.js"
+    "build": "tsc",
+    "test": "npx lerna run build --scope=demo-is-odd && jest"
+  },
   "devDependencies": {
     "jest": "^29.5.0",
     "typescript": "^5.1.3"
