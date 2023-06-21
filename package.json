@@ -9,5 +9,8 @@
     "lerna": "^7.0.2",
     "nx": "16.3.2",
     "nx-cloud": "latest"
+  },
+  "scripts": {
+    "prepack": "lerna run test"
   }
 }
