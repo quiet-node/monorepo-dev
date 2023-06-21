@@ -1,6 +1,6 @@
 {
   "name": "demo-is-even",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "> TODO: description",
   "author": "Logan Nguyen <lg.131.dev@gmail.com>",
   "homepage": "",
@@ -15,7 +15,7 @@
     "dist"
   ],
   "dependencies": {
-    "demo-is-odd": "*"
+    "demo-is-odd": "^1.0.0"
   },
   "scripts": {
     "build": "tsc",
