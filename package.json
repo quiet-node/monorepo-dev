@@ -12,5 +12,9 @@
   },
   "scripts": {
     "prepack": "lerna run test"
+  },
+  "resources": {
+    "github": "https://github.com/ZackDeRose/demo-trivial-packages",
+    "youtube": "https://www.youtube.com/watch?v=WD5T-VMCTvY"
   }
 }
