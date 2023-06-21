@@ -1,7 +1,7 @@
-'use strict';
+const { isOdd } = require('../dist/demo-is-odd.js');
 
-const demoIsOdd = require('..');
-const assert = require('assert').strict;
-
-assert.strictEqual(demoIsOdd(), 'Hello from demoIsOdd');
-console.info('demoIsOdd tests passed');
+test('isOdd', () => {
+  expect(isOdd(1)).toBe(true);
+  expect(isOdd(2)).toBe(false);
+  expect(isOdd(3)).toBe(true);
+});
