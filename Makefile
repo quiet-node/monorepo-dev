@@ -10,3 +10,6 @@ lerna-test-is-even:
 
 lerna-test-is-odd:
 	lerna run test --scope=demo-is-odd
+
+lerna-test-global:
+	lerna run test
